@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="signin.css">
+    <title>login or signup</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html"><img class="logo" src="image/Screenshot 2023-11-04 193628.png"></a>
+    <div class="container1">
+        
+        <ul>
+          <li class="navlink"><a target="_blank" href="blogs.html">BLOGS</a></li>
+          <li class="navlink"><a target="_blank" href="aboutus.html">ABOUT US</a></li>
+          <li class="navlink"><a target="_blank" href="FAQ.html">FAQ</a></li>
+          <li class="navlink"><a target="_blank" href="gallery.html">GALLERY</a></li>
+          <li class="navlink"><a target="_blank" href="signin.html">SIGN IN</a></li>
+          <!-- <li class="navlink" id="profilelogo"><a href=""><img width="30px" src="image/Screenshot_2023-10-31_200329-removebg-preview.png"></a></li> -->
+        </ul>
+        <div class="emptydiv1"></div>
+        <div class="emptydiv2"></div>
+        <div class="emptydiv3"></div> 
+        
+        <!-- <img style="margin-top: 5px" class="profilelogo" src="image/Screenshot_2023-10-31_200329-removebg-preview.png"> -->
+      </div>
+      
+    <!-- <span><h1>FOREST<br>RESOURCE</h1></span> -->
+    </div>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a target="_blank" href="https://www.google.com/" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registeration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="signin.js"></script>
+</body>
+
+</html>

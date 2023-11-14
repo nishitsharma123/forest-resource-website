@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal | www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive FAQ Accordion | CodingLab </title>
+    <link rel="stylesheet" href="FAQ.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  
+
+  <div class="accordion">
+    <div class="image-box">
+      <img class="img1" src="image/istockphoto-1396912435-612x612.jpg" alt="Accordion Image">
+    </div>
+    <div class="accordion-text">
+      <div class="title">FAQ</div>
+    <ul class="faq-text">
+      <li>
+        <div class="question-arrow">
+          <span class="question">What are forest resources?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Forest resources refer to all the goods and services that forests provide to humans and the environment. These resources include timber, non-timber forest products, biodiversity, water, carbon storage, and recreational opportunities.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">What is sustainable forest management (SFM)?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Sustainable forest management is the responsible use and conservation of forests to meet the needs of the present without compromising the ability of future generations to meet their own needs. It aims to balance environmental, economic, and social objectives.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question"> What is deforestation, and why is it a concern?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Deforestation is the process of clearing or removing forests to make way for agriculture, infrastructure, or urban development. It is a concern because it leads to the loss of biodiversity, disrupts ecosystems, and contributes to climate change.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question"> How can I get involved in conserving forest resources?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>You can get involved by supporting conservation organizations, participating in reforestation and afforestation initiatives, advocating for sustainable forest management practices, and being mindful of your consumption of forest products.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question"> How can I promote responsible consumption of forest products?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>You can promote responsible consumption by choosing products with certifications such as FSC (Forest Stewardship Council) or Rainforest Alliance, which indicate that the products are sourced sustainably. You can also reduce your consumption of paper and wood products.</p>
+        <span class="line"></span>
+      </li>
+    </ul>
+    </div>
+  </div>
+
+
+  <script>
+    let li = document.querySelectorAll(".faq-text li");
+    for (var i = 0; i < li.length; i++) {
+      li[i].addEventListener("click", (e)=>{
+        let clickedLi;
+        if(e.target.classList.contains("question-arrow")){
+          clickedLi = e.target.parentElement;
+        }else{
+          clickedLi = e.target.parentElement.parentElement;
+        }
+       clickedLi.classList.toggle("showAnswer");
+      });
+    }
+  </script>
+
+</body>
+</html>
